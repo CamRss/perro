@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>novia</title>
+  <style>
+    .body {
+      background-color: rgb(213, 129, 241);
+      text-align: center;
+    }
+
+    .body__title {
+      color: rgb(0, 0, 0);
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">¿Quieres ser mi novia?</h1>
+  <img src="https://i.pinimg.com/564x/05/60/c7/0560c73179d3cd21328917fd981dd17d.jpg" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">Sip</button>
+  <button id="no">No</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('jsjkja ya sabía que querias');
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
